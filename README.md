@@ -1,11 +1,12 @@
-php-sdk111
-
-The http://www.10690757.com php sdk.
+# python-sdk
+The http://www.10690757.com python sdk.
 
 在使用SDK之前，您需要有一对有效的cust_code和cust_pwd。如果不记得，可咨询我们的客服人员。
 
- 场景化示例
 
+场景化示例
+
+```python
 #!/usr/bin/python3
 # -*- coding:utf-8 -*-
 #filename:SdkTest
@@ -26,7 +27,7 @@ print(result.content)
 #发送变量短信
 var1 = {'mobile':'159XXXX3654','vars':['长乐','25']}
 var2 = {'mobile':'186XXXX5293','vars':['上杭','27']}
-result = smsOperator.send_varSms({'content': '用户您好，今天的天气，晴，温度度，事宜外出。', 'params': [var1,var2]})
+result = smsOperator.send_varSms({'content': '${mobile}用户您好，今天${var1}的天气，晴，温度${var2}度，事宜外出。', 'params': [var1,var2]})
 print(result.content)
 
 #获取状态报告
@@ -49,5 +50,5 @@ package2 = {'phone': '186XXXX5293', 'context': '您的验证码为：9990'}
 item = [package1,package2]
 result = multiSmsOperator.send_multiSms({'item':item,'srcphone':srcphone})
 print(result.content)
-								
+```
 
