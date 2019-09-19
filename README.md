@@ -1,5 +1,5 @@
 # python-sdk
-The http://www.10690757.com python sdk.
+The http://wlwx.com python sdk.
 
 在使用SDK之前，您需要有一对有效的cust_code和cust_pwd。如果不记得，可咨询我们的客服人员。
 
